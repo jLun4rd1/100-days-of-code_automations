@@ -43,4 +43,4 @@ jobs:
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         ALPHA_API_KEY: ${{ secrets.ALPHA_API_KEY }}
         NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-      run: python main.py
+      run: python3 'Day 36 - Stock Alert/main.py'
