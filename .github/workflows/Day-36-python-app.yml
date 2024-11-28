@@ -37,5 +37,10 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-    - name: Run Main.py
+    - name: Set Environment Variables & Run Main.py
+      env:
+        MY_EMAIL: ${{ secrets.MY_EMAIL }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        ALPHA_API_KEY: ${{ secrets.ALPHA_API_KEY }}
+        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
       run: python main.py
