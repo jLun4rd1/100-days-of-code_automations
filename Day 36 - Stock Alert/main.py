@@ -33,6 +33,7 @@ news_params = {
     "q": COMPANY_NAME,
     "from": YESTERDAY,
     "sortBy": 'popularity',
+    "language": 'en',
     "apiKey": NEWS_API_KEY
 }
 
